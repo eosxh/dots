@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+
+WALLDIR="/home/max/.config/hypr/wallpapers/nord"
+
+swww init 2>/dev/null
+
+swww img "$(find "$WALLDIR" -type f | shuf -n 1)" --transition-step=90
