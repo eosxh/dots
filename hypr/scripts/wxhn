@@ -1,7 +1,15 @@
 #!/usr/bin/env bash
 
-WALLDIR="/home/max/.config/hypr/wallpapers/nord"
+WALLDIR="$HOME/.config/hypr/walls"
+
 
 swww init 2>/dev/null
 
-swww img "$(find "$WALLDIR" -type f | shuf -n 1)" --transition-step=90
+
+WALL=$(find "$WALLDIR" -type f | shuf -n 1)
+
+
+swww img "$WALL" --transition-step=90
+
+
+matugen image "$WALL"
