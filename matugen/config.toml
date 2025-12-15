@@ -2,10 +2,11 @@
 # ...
 
 [templates.hyprland]
-input_path = '$HOME/.config/matugen/templates/colors.conf'
-output_path = '$HOME/.config/hypr/colors.conf'
+input_path = '~/.config/matugen/templates/colors.conf'
+output_path = '~/.config/hypr/colors.conf'
 post_hook = 'hyprctl reload'
 
-[templates.foot]
-input_path = '$HOME/.config/matugen/templates/foot.ini'
-output_path = '$HOME/.config/foot/foot.ini'
+
+[templates.fuzzel]
+input_path = '~/.config/matugen/templates/colors.ini'
+output_path = '~/.config/fuzzel/colors.ini'
